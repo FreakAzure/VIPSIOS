@@ -1,0 +1,1252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402BBF8750DA59144F63331C /* Pods_VipspadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5C5189B422303B8DBF625D /* Pods_VipspadTests.framework */; };
+		BB1D61F2295B550E00D093A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D61F1295B550E00D093A4 /* AppDelegate.swift */; };
+		BB1D61F4295B550E00D093A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D61F3295B550E00D093A4 /* SceneDelegate.swift */; };
+		BB1D61F6295B550E00D093A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D61F5295B550E00D093A4 /* ViewController.swift */; };
+		BB1D61F9295B550E00D093A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1D61F7295B550E00D093A4 /* Main.storyboard */; };
+		BB1D61FB295B551000D093A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1D61FA295B551000D093A4 /* Assets.xcassets */; };
+		BB1D61FE295B551000D093A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1D61FC295B551000D093A4 /* LaunchScreen.storyboard */; };
+		BB1D6209295B551100D093A4 /* VipspadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6208295B551100D093A4 /* VipspadTests.swift */; };
+		BB1D6214295B551100D093A4 /* VipspadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6213295B551100D093A4 /* VipspadUITests.swift */; };
+		BB1D6225295B55DF00D093A4 /* BaseViperContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6224295B55DF00D093A4 /* BaseViperContract.swift */; };
+		BB1D6227295B560C00D093A4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6226295B560C00D093A4 /* Singleton.swift */; };
+		BB1D6241295B5B3A00D093A4 /* MainViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623C295B5B3A00D093A4 /* MainViewContract.swift */; };
+		BB1D6242295B5B3A00D093A4 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623D295B5B3A00D093A4 /* MainViewPresenter.swift */; };
+		BB1D6243295B5B3A00D093A4 /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623E295B5B3A00D093A4 /* MainViewRouter.swift */; };
+		BB1D6244295B5B3A00D093A4 /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623F295B5B3A00D093A4 /* MainViewViewController.swift */; };
+		BB1D6245295B5B3A00D093A4 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6240295B5B3A00D093A4 /* MainViewInteractor.swift */; };
+		BB7EB341296B515900C4DE50 /* Pods_Vipspad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B029C18E0C7CE10249DC2790 /* Pods_Vipspad.framework */; };
+		BB7EB342296B515900C4DE50 /* Pods_Vipspad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B029C18E0C7CE10249DC2790 /* Pods_Vipspad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB7EB3B0296B6ECE00C4DE50 /* VipsAPIContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EB3AF296B6ECE00C4DE50 /* VipsAPIContract.swift */; };
+		BB7EB3B2296B704900C4DE50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EB3B1296B704900C4DE50 /* User.swift */; };
+		BB7EB3B4296B717A00C4DE50 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EB3B3296B717A00C4DE50 /* Post.swift */; };
+		BB7EB3B6296B719000C4DE50 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EB3B5296B719000C4DE50 /* Category.swift */; };
+		BB7EB3B8296B722600C4DE50 /* VipsAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EB3B7296B722600C4DE50 /* VipsAPIEndpoints.swift */; };
+		BB990B79296B4CD4003C8A42 /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB990B78296B4CD4003C8A42 /* AlamofireService.swift */; };
+		BB990B7B296B4E5C003C8A42 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BB990B7A296B4E5C003C8A42 /* Podfile */; };
+		E272FC06DB954FBD09AAC0B5 /* Pods_Vipspad_VipspadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA659799BE285A6783E6AFB /* Pods_Vipspad_VipspadUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB1D6205295B551100D093A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1D61E6295B550E00D093A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1D61ED295B550E00D093A4;
+			remoteInfo = Vipspad;
+		};
+		BB1D6210295B551100D093A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1D61E6295B550E00D093A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1D61ED295B550E00D093A4;
+			remoteInfo = Vipspad;
+		};
+		BB7EB34F296B525000C4DE50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D797E9A5C5782CE845840781FA1CC81;
+			remoteInfo = Alamofire;
+		};
+		BB7EB351296B525000C4DE50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C6D6DAFFFEA1FE7B3ED17CA91C34305;
+			remoteInfo = "Pods-Vipspad";
+		};
+		BB7EB353296B525000C4DE50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FBB105D78E02E101BD6AAA66504E705;
+			remoteInfo = "Pods-Vipspad-VipspadUITests";
+		};
+		BB7EB355296B525000C4DE50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 567E449DA9BB0C061C7135DEB8511FFA;
+			remoteInfo = "Pods-VipspadTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB7EB343296B515900C4DE50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB7EB342296B515900C4DE50 /* Pods_Vipspad.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1BE251B27FD7A980A94DE239 /* Pods-VipspadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VipspadTests.debug.xcconfig"; path = "Target Support Files/Pods-VipspadTests/Pods-VipspadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30BA589E573FAFE408FC961C /* Pods-Vipspad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipspad.release.xcconfig"; path = "Target Support Files/Pods-Vipspad/Pods-Vipspad.release.xcconfig"; sourceTree = "<group>"; };
+		4FA659799BE285A6783E6AFB /* Pods_Vipspad_VipspadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vipspad_VipspadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B936B216D57B99825654C75 /* Pods-Vipspad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipspad.debug.xcconfig"; path = "Target Support Files/Pods-Vipspad/Pods-Vipspad.debug.xcconfig"; sourceTree = "<group>"; };
+		ACFE3C71DA5250DDD5988215 /* Pods-Vipspad-VipspadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipspad-VipspadUITests.release.xcconfig"; path = "Target Support Files/Pods-Vipspad-VipspadUITests/Pods-Vipspad-VipspadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B029C18E0C7CE10249DC2790 /* Pods_Vipspad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vipspad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D61EE295B550E00D093A4 /* Vipspad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vipspad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D61F1295B550E00D093A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB1D61F3295B550E00D093A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB1D61F5295B550E00D093A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB1D61F8295B550E00D093A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB1D61FA295B551000D093A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB1D61FD295B551000D093A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB1D61FF295B551000D093A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1D6204295B551100D093A4 /* VipspadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VipspadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D6208295B551100D093A4 /* VipspadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipspadTests.swift; sourceTree = "<group>"; };
+		BB1D620A295B551100D093A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1D620F295B551100D093A4 /* VipspadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VipspadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D6213295B551100D093A4 /* VipspadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipspadUITests.swift; sourceTree = "<group>"; };
+		BB1D6215295B551100D093A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1D6224295B55DF00D093A4 /* BaseViperContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViperContract.swift; sourceTree = "<group>"; };
+		BB1D6226295B560C00D093A4 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		BB1D623C295B5B3A00D093A4 /* MainViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContract.swift; sourceTree = "<group>"; };
+		BB1D623D295B5B3A00D093A4 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		BB1D623E295B5B3A00D093A4 /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
+		BB1D623F295B5B3A00D093A4 /* MainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
+		BB1D6240295B5B3A00D093A4 /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		BB7EB347296B525000C4DE50 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		BB7EB348296B525000C4DE50 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		BB7EB359296B525000C4DE50 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		BB7EB35A296B525000C4DE50 /* Alamofire-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		BB7EB35B296B525000C4DE50 /* Alamofire-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		BB7EB35C296B525000C4DE50 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		BB7EB35D296B525000C4DE50 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		BB7EB35E296B525000C4DE50 /* Alamofire.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		BB7EB35F296B525000C4DE50 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		BB7EB361296B525000C4DE50 /* Pods-VipspadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-VipspadTests-Info.plist"; sourceTree = "<group>"; };
+		BB7EB362296B525000C4DE50 /* Pods-VipspadTests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-VipspadTests-dummy.m"; sourceTree = "<group>"; };
+		BB7EB363296B525000C4DE50 /* Pods-VipspadTests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-VipspadTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB7EB364296B525000C4DE50 /* Pods-VipspadTests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-VipspadTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB7EB365296B525000C4DE50 /* Pods-VipspadTests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VipspadTests.modulemap"; sourceTree = "<group>"; };
+		BB7EB366296B525000C4DE50 /* Pods-VipspadTests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-VipspadTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB7EB367296B525000C4DE50 /* Pods-VipspadTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-VipspadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7EB368296B525000C4DE50 /* Pods-VipspadTests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-VipspadTests-umbrella.h"; sourceTree = "<group>"; };
+		BB7EB36A296B525000C4DE50 /* Pods-Vipspad-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vipspad-dummy.m"; sourceTree = "<group>"; };
+		BB7EB36B296B525000C4DE50 /* Pods-Vipspad-frameworks-Release-output-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-frameworks-Release-output-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB36C296B525000C4DE50 /* Pods-Vipspad-frameworks-Release-input-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-frameworks-Release-input-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB36D296B525000C4DE50 /* Pods-Vipspad-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-Vipspad-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB7EB36E296B525000C4DE50 /* Pods-Vipspad.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Vipspad.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7EB36F296B525000C4DE50 /* Pods-Vipspad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-Vipspad-Info.plist"; sourceTree = "<group>"; };
+		BB7EB370296B525000C4DE50 /* Pods-Vipspad.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Vipspad.release.xcconfig"; sourceTree = "<group>"; };
+		BB7EB371296B525000C4DE50 /* Pods-Vipspad.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Vipspad.modulemap"; sourceTree = "<group>"; };
+		BB7EB372296B525000C4DE50 /* Pods-Vipspad-frameworks-Debug-output-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-frameworks-Debug-output-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB373296B525000C4DE50 /* Pods-Vipspad-frameworks-Debug-input-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-frameworks-Debug-input-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB374296B525000C4DE50 /* Pods-Vipspad-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-Vipspad-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB7EB375296B525000C4DE50 /* Pods-Vipspad-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-Vipspad-umbrella.h"; sourceTree = "<group>"; };
+		BB7EB376296B525000C4DE50 /* Pods-Vipspad-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-Vipspad-frameworks.sh"; sourceTree = "<group>"; };
+		BB7EB378296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vipspad-VipspadUITests-dummy.m"; sourceTree = "<group>"; };
+		BB7EB379296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-Vipspad-VipspadUITests-Info.plist"; sourceTree = "<group>"; };
+		BB7EB37A296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Debug-input-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-VipspadUITests-frameworks-Debug-input-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB37B296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Debug-output-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-VipspadUITests-frameworks-Debug-output-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB37C296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Release-output-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-VipspadUITests-frameworks-Release-output-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB37D296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Release-input-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-Vipspad-VipspadUITests-frameworks-Release-input-files.xcfilelist"; sourceTree = "<group>"; };
+		BB7EB37E296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-Vipspad-VipspadUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB7EB37F296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-Vipspad-VipspadUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB7EB380296B525000C4DE50 /* Pods-Vipspad-VipspadUITests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Vipspad-VipspadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7EB381296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-Vipspad-VipspadUITests-frameworks.sh"; sourceTree = "<group>"; };
+		BB7EB382296B525000C4DE50 /* Pods-Vipspad-VipspadUITests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-Vipspad-VipspadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB7EB383296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-Vipspad-VipspadUITests-umbrella.h"; sourceTree = "<group>"; };
+		BB7EB384296B525000C4DE50 /* Pods-Vipspad-VipspadUITests.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Vipspad-VipspadUITests.modulemap"; sourceTree = "<group>"; };
+		BB7EB387296B525000C4DE50 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BB7EB389296B525000C4DE50 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		BB7EB38A296B525000C4DE50 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		BB7EB38B296B525000C4DE50 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		BB7EB38C296B525000C4DE50 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		BB7EB38D296B525000C4DE50 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		BB7EB38E296B525000C4DE50 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		BB7EB38F296B525000C4DE50 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		BB7EB390296B525000C4DE50 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
+		BB7EB391296B525000C4DE50 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		BB7EB392296B525000C4DE50 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		BB7EB393296B525000C4DE50 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
+		BB7EB394296B525000C4DE50 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		BB7EB395296B525000C4DE50 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		BB7EB396296B525000C4DE50 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		BB7EB397296B525000C4DE50 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		BB7EB398296B525000C4DE50 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
+		BB7EB399296B525000C4DE50 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		BB7EB39A296B525000C4DE50 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
+		BB7EB39B296B525000C4DE50 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BB7EB39C296B525000C4DE50 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
+		BB7EB39D296B525000C4DE50 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		BB7EB39E296B525000C4DE50 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		BB7EB39F296B525000C4DE50 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
+		BB7EB3A0296B525000C4DE50 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		BB7EB3A1296B525000C4DE50 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		BB7EB3A2296B525000C4DE50 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		BB7EB3A3296B525000C4DE50 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BB7EB3A4296B525000C4DE50 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		BB7EB3A5296B525000C4DE50 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
+		BB7EB3A6296B525000C4DE50 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BB7EB3A7296B525000C4DE50 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		BB7EB3A8296B525000C4DE50 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		BB7EB3A9296B525000C4DE50 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
+		BB7EB3AA296B525000C4DE50 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		BB7EB3AB296B525000C4DE50 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		BB7EB3AC296B525000C4DE50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB7EB3AF296B6ECE00C4DE50 /* VipsAPIContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipsAPIContract.swift; sourceTree = "<group>"; };
+		BB7EB3B1296B704900C4DE50 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB7EB3B3296B717A00C4DE50 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BB7EB3B5296B719000C4DE50 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BB7EB3B7296B722600C4DE50 /* VipsAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VipsAPIEndpoints.swift; sourceTree = "<group>"; };
+		BB990B78296B4CD4003C8A42 /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		BB990B7A296B4E5C003C8A42 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BD5C5189B422303B8DBF625D /* Pods_VipspadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VipspadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3094A4691C118C00376B4D5 /* Pods-Vipspad-VipspadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipspad-VipspadUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vipspad-VipspadUITests/Pods-Vipspad-VipspadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E475B5866A76FA1E5C1FD38D /* Pods-VipspadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VipspadTests.release.xcconfig"; path = "Target Support Files/Pods-VipspadTests/Pods-VipspadTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB1D61EB295B550E00D093A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7EB341296B515900C4DE50 /* Pods_Vipspad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D6201295B551100D093A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402BBF8750DA59144F63331C /* Pods_VipspadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D620C295B551100D093A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E272FC06DB954FBD09AAC0B5 /* Pods_Vipspad_VipspadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D89F26C1E7EFF39812168F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB386296B525000C4DE50 /* Alamofire */,
+				BB7EB385296B525000C4DE50 /* Headers */,
+				BB7EB346296B525000C4DE50 /* Local Podspecs */,
+				BB7EB347296B525000C4DE50 /* Manifest.lock */,
+				BB7EB348296B525000C4DE50 /* Pods.xcodeproj */,
+				BB7EB357296B525000C4DE50 /* Target Support Files */,
+				5B936B216D57B99825654C75 /* Pods-Vipspad.debug.xcconfig */,
+				30BA589E573FAFE408FC961C /* Pods-Vipspad.release.xcconfig */,
+				C3094A4691C118C00376B4D5 /* Pods-Vipspad-VipspadUITests.debug.xcconfig */,
+				ACFE3C71DA5250DDD5988215 /* Pods-Vipspad-VipspadUITests.release.xcconfig */,
+				1BE251B27FD7A980A94DE239 /* Pods-VipspadTests.debug.xcconfig */,
+				E475B5866A76FA1E5C1FD38D /* Pods-VipspadTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		67C9C283DAD87E599AF4C652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B029C18E0C7CE10249DC2790 /* Pods_Vipspad.framework */,
+				4FA659799BE285A6783E6AFB /* Pods_Vipspad_VipspadUITests.framework */,
+				BD5C5189B422303B8DBF625D /* Pods_VipspadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB1D61E5295B550E00D093A4 = {
+			isa = PBXGroup;
+			children = (
+				BB990B7A296B4E5C003C8A42 /* Podfile */,
+				BB1D61F0295B550E00D093A4 /* Vipspad */,
+				BB1D6207295B551100D093A4 /* VipspadTests */,
+				BB1D6212295B551100D093A4 /* VipspadUITests */,
+				BB1D61EF295B550E00D093A4 /* Products */,
+				05D89F26C1E7EFF39812168F /* Pods */,
+				67C9C283DAD87E599AF4C652 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB1D61EF295B550E00D093A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D61EE295B550E00D093A4 /* Vipspad.app */,
+				BB1D6204295B551100D093A4 /* VipspadTests.xctest */,
+				BB1D620F295B551100D093A4 /* VipspadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB1D61F0295B550E00D093A4 /* Vipspad */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D622F295B573E00D093A4 /* Resources */,
+				BB1D622E295B571700D093A4 /* Modules */,
+				BB1D6223295B55C800D093A4 /* Common */,
+				BB1D6221295B55A300D093A4 /* Classes */,
+				BB1D61F3295B550E00D093A4 /* SceneDelegate.swift */,
+				BB1D61F5295B550E00D093A4 /* ViewController.swift */,
+				BB1D61F7295B550E00D093A4 /* Main.storyboard */,
+				BB1D61FC295B551000D093A4 /* LaunchScreen.storyboard */,
+				BB1D61FF295B551000D093A4 /* Info.plist */,
+			);
+			path = Vipspad;
+			sourceTree = "<group>";
+		};
+		BB1D6207295B551100D093A4 /* VipspadTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D6208295B551100D093A4 /* VipspadTests.swift */,
+				BB1D620A295B551100D093A4 /* Info.plist */,
+			);
+			path = VipspadTests;
+			sourceTree = "<group>";
+		};
+		BB1D6212295B551100D093A4 /* VipspadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D6213295B551100D093A4 /* VipspadUITests.swift */,
+				BB1D6215295B551100D093A4 /* Info.plist */,
+			);
+			path = VipspadUITests;
+			sourceTree = "<group>";
+		};
+		BB1D6221295B55A300D093A4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB3AD296B6EAF00C4DE50 /* Common */,
+				BB990B77296B4CBF003C8A42 /* Services */,
+				BB1D6222295B55AC00D093A4 /* App */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BB1D6222295B55AC00D093A4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D61F1295B550E00D093A4 /* AppDelegate.swift */,
+				BB1D6226295B560C00D093A4 /* Singleton.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BB1D6223295B55C800D093A4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D622D295B56A700D093A4 /* Designables */,
+				BB1D622C295B568700D093A4 /* Extensions */,
+				BB1D6229295B566C00D093A4 /* Entities */,
+				BB1D6228295B561E00D093A4 /* BaseViper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BB1D6228295B561E00D093A4 /* BaseViper */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D6224295B55DF00D093A4 /* BaseViperContract.swift */,
+			);
+			path = BaseViper;
+			sourceTree = "<group>";
+		};
+		BB1D6229295B566C00D093A4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D622B295B567A00D093A4 /* External */,
+				BB1D622A295B567200D093A4 /* Internal */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BB1D622A295B567200D093A4 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		BB1D622B295B567A00D093A4 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB3B1296B704900C4DE50 /* User.swift */,
+				BB7EB3B3296B717A00C4DE50 /* Post.swift */,
+				BB7EB3B5296B719000C4DE50 /* Category.swift */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		BB1D622C295B568700D093A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB1D622D295B56A700D093A4 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		BB1D622E295B571700D093A4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D623B295B5B2300D093A4 /* MainViewModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BB1D622F295B573E00D093A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D61FA295B551000D093A4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB1D623B295B5B2300D093A4 /* MainViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				BB1D623C295B5B3A00D093A4 /* MainViewContract.swift */,
+				BB1D623D295B5B3A00D093A4 /* MainViewPresenter.swift */,
+				BB1D623E295B5B3A00D093A4 /* MainViewRouter.swift */,
+				BB1D623F295B5B3A00D093A4 /* MainViewViewController.swift */,
+				BB1D6240295B5B3A00D093A4 /* MainViewInteractor.swift */,
+			);
+			path = MainViewModule;
+			sourceTree = "<group>";
+		};
+		BB7EB346296B525000C4DE50 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		BB7EB349296B525000C4DE50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB350296B525000C4DE50 /* Alamofire.framework */,
+				BB7EB352296B525000C4DE50 /* Pods_Vipspad.framework */,
+				BB7EB354296B525000C4DE50 /* Pods_Vipspad_VipspadUITests.framework */,
+				BB7EB356296B525000C4DE50 /* Pods_VipspadTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB7EB357296B525000C4DE50 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB358296B525000C4DE50 /* Alamofire */,
+				BB7EB360296B525000C4DE50 /* Pods-VipspadTests */,
+				BB7EB369296B525000C4DE50 /* Pods-Vipspad */,
+				BB7EB377296B525000C4DE50 /* Pods-Vipspad-VipspadUITests */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		BB7EB358296B525000C4DE50 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB359296B525000C4DE50 /* Alamofire.release.xcconfig */,
+				BB7EB35A296B525000C4DE50 /* Alamofire-Info.plist */,
+				BB7EB35B296B525000C4DE50 /* Alamofire-dummy.m */,
+				BB7EB35C296B525000C4DE50 /* Alamofire.debug.xcconfig */,
+				BB7EB35D296B525000C4DE50 /* Alamofire-umbrella.h */,
+				BB7EB35E296B525000C4DE50 /* Alamofire.modulemap */,
+				BB7EB35F296B525000C4DE50 /* Alamofire-prefix.pch */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		BB7EB360296B525000C4DE50 /* Pods-VipspadTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB361296B525000C4DE50 /* Pods-VipspadTests-Info.plist */,
+				BB7EB362296B525000C4DE50 /* Pods-VipspadTests-dummy.m */,
+				BB7EB363296B525000C4DE50 /* Pods-VipspadTests-acknowledgements.plist */,
+				BB7EB364296B525000C4DE50 /* Pods-VipspadTests.release.xcconfig */,
+				BB7EB365296B525000C4DE50 /* Pods-VipspadTests.modulemap */,
+				BB7EB366296B525000C4DE50 /* Pods-VipspadTests-acknowledgements.markdown */,
+				BB7EB367296B525000C4DE50 /* Pods-VipspadTests.debug.xcconfig */,
+				BB7EB368296B525000C4DE50 /* Pods-VipspadTests-umbrella.h */,
+			);
+			path = "Pods-VipspadTests";
+			sourceTree = "<group>";
+		};
+		BB7EB369296B525000C4DE50 /* Pods-Vipspad */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB36A296B525000C4DE50 /* Pods-Vipspad-dummy.m */,
+				BB7EB36B296B525000C4DE50 /* Pods-Vipspad-frameworks-Release-output-files.xcfilelist */,
+				BB7EB36C296B525000C4DE50 /* Pods-Vipspad-frameworks-Release-input-files.xcfilelist */,
+				BB7EB36D296B525000C4DE50 /* Pods-Vipspad-acknowledgements.markdown */,
+				BB7EB36E296B525000C4DE50 /* Pods-Vipspad.debug.xcconfig */,
+				BB7EB36F296B525000C4DE50 /* Pods-Vipspad-Info.plist */,
+				BB7EB370296B525000C4DE50 /* Pods-Vipspad.release.xcconfig */,
+				BB7EB371296B525000C4DE50 /* Pods-Vipspad.modulemap */,
+				BB7EB372296B525000C4DE50 /* Pods-Vipspad-frameworks-Debug-output-files.xcfilelist */,
+				BB7EB373296B525000C4DE50 /* Pods-Vipspad-frameworks-Debug-input-files.xcfilelist */,
+				BB7EB374296B525000C4DE50 /* Pods-Vipspad-acknowledgements.plist */,
+				BB7EB375296B525000C4DE50 /* Pods-Vipspad-umbrella.h */,
+				BB7EB376296B525000C4DE50 /* Pods-Vipspad-frameworks.sh */,
+			);
+			path = "Pods-Vipspad";
+			sourceTree = "<group>";
+		};
+		BB7EB377296B525000C4DE50 /* Pods-Vipspad-VipspadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB378296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-dummy.m */,
+				BB7EB379296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-Info.plist */,
+				BB7EB37A296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Debug-input-files.xcfilelist */,
+				BB7EB37B296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Debug-output-files.xcfilelist */,
+				BB7EB37C296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Release-output-files.xcfilelist */,
+				BB7EB37D296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks-Release-input-files.xcfilelist */,
+				BB7EB37E296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-acknowledgements.plist */,
+				BB7EB37F296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-acknowledgements.markdown */,
+				BB7EB380296B525000C4DE50 /* Pods-Vipspad-VipspadUITests.debug.xcconfig */,
+				BB7EB381296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-frameworks.sh */,
+				BB7EB382296B525000C4DE50 /* Pods-Vipspad-VipspadUITests.release.xcconfig */,
+				BB7EB383296B525000C4DE50 /* Pods-Vipspad-VipspadUITests-umbrella.h */,
+				BB7EB384296B525000C4DE50 /* Pods-Vipspad-VipspadUITests.modulemap */,
+			);
+			path = "Pods-Vipspad-VipspadUITests";
+			sourceTree = "<group>";
+		};
+		BB7EB385296B525000C4DE50 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		BB7EB386296B525000C4DE50 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB387296B525000C4DE50 /* LICENSE */,
+				BB7EB388296B525000C4DE50 /* Source */,
+				BB7EB3AC296B525000C4DE50 /* README.md */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		BB7EB388296B525000C4DE50 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB389296B525000C4DE50 /* MultipartFormData.swift */,
+				BB7EB38A296B525000C4DE50 /* RequestInterceptor.swift */,
+				BB7EB38B296B525000C4DE50 /* NetworkReachabilityManager.swift */,
+				BB7EB38C296B525000C4DE50 /* ParameterEncoder.swift */,
+				BB7EB38D296B525000C4DE50 /* URLSessionConfiguration+Alamofire.swift */,
+				BB7EB38E296B525000C4DE50 /* Session.swift */,
+				BB7EB38F296B525000C4DE50 /* OperationQueue+Alamofire.swift */,
+				BB7EB390296B525000C4DE50 /* CachedResponseHandler.swift */,
+				BB7EB391296B525000C4DE50 /* StringEncoding+Alamofire.swift */,
+				BB7EB392296B525000C4DE50 /* DispatchQueue+Alamofire.swift */,
+				BB7EB393296B525000C4DE50 /* RetryPolicy.swift */,
+				BB7EB394296B525000C4DE50 /* Protected.swift */,
+				BB7EB395296B525000C4DE50 /* ParameterEncoding.swift */,
+				BB7EB396296B525000C4DE50 /* ServerTrustEvaluation.swift */,
+				BB7EB397296B525000C4DE50 /* AFError.swift */,
+				BB7EB398296B525000C4DE50 /* RedirectHandler.swift */,
+				BB7EB399296B525000C4DE50 /* URLEncodedFormEncoder.swift */,
+				BB7EB39A296B525000C4DE50 /* AlamofireExtended.swift */,
+				BB7EB39B296B525000C4DE50 /* HTTPMethod.swift */,
+				BB7EB39C296B525000C4DE50 /* MultipartUpload.swift */,
+				BB7EB39D296B525000C4DE50 /* URLRequest+Alamofire.swift */,
+				BB7EB39E296B525000C4DE50 /* URLConvertible+URLRequestConvertible.swift */,
+				BB7EB39F296B525000C4DE50 /* RequestTaskMap.swift */,
+				BB7EB3A0296B525000C4DE50 /* Validation.swift */,
+				BB7EB3A1296B525000C4DE50 /* Notifications.swift */,
+				BB7EB3A2296B525000C4DE50 /* AuthenticationInterceptor.swift */,
+				BB7EB3A3296B525000C4DE50 /* Response.swift */,
+				BB7EB3A4296B525000C4DE50 /* Alamofire.swift */,
+				BB7EB3A5296B525000C4DE50 /* Result+Alamofire.swift */,
+				BB7EB3A6296B525000C4DE50 /* Request.swift */,
+				BB7EB3A7296B525000C4DE50 /* HTTPHeaders.swift */,
+				BB7EB3A8296B525000C4DE50 /* EventMonitor.swift */,
+				BB7EB3A9296B525000C4DE50 /* Combine.swift */,
+				BB7EB3AA296B525000C4DE50 /* ResponseSerialization.swift */,
+				BB7EB3AB296B525000C4DE50 /* SessionDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BB7EB3AD296B6EAF00C4DE50 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB3AE296B6EB600C4DE50 /* Endpoints */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BB7EB3AE296B6EB600C4DE50 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				BB7EB3AF296B6ECE00C4DE50 /* VipsAPIContract.swift */,
+				BB7EB3B7296B722600C4DE50 /* VipsAPIEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		BB990B77296B4CBF003C8A42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB990B78296B4CD4003C8A42 /* AlamofireService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB1D61ED295B550E00D093A4 /* Vipspad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1D6218295B551100D093A4 /* Build configuration list for PBXNativeTarget "Vipspad" */;
+			buildPhases = (
+				9444D08E4E23886225E2EBA2 /* [CP] Check Pods Manifest.lock */,
+				BB1D61EA295B550E00D093A4 /* Sources */,
+				BB1D61EB295B550E00D093A4 /* Frameworks */,
+				BB1D61EC295B550E00D093A4 /* Resources */,
+				B073CF052A7467F8FB64E332 /* [CP] Embed Pods Frameworks */,
+				BB7EB343296B515900C4DE50 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vipspad;
+			productName = Vipspad;
+			productReference = BB1D61EE295B550E00D093A4 /* Vipspad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB1D6203295B551100D093A4 /* VipspadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1D621B295B551100D093A4 /* Build configuration list for PBXNativeTarget "VipspadTests" */;
+			buildPhases = (
+				4C76515BADC2CDA4FC35D1F1 /* [CP] Check Pods Manifest.lock */,
+				BB1D6200295B551100D093A4 /* Sources */,
+				BB1D6201295B551100D093A4 /* Frameworks */,
+				BB1D6202295B551100D093A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1D6206295B551100D093A4 /* PBXTargetDependency */,
+			);
+			name = VipspadTests;
+			productName = VipspadTests;
+			productReference = BB1D6204295B551100D093A4 /* VipspadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB1D620E295B551100D093A4 /* VipspadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1D621E295B551100D093A4 /* Build configuration list for PBXNativeTarget "VipspadUITests" */;
+			buildPhases = (
+				2C50D7EA60228B651D416A90 /* [CP] Check Pods Manifest.lock */,
+				BB1D620B295B551100D093A4 /* Sources */,
+				BB1D620C295B551100D093A4 /* Frameworks */,
+				BB1D620D295B551100D093A4 /* Resources */,
+				752EFD4A208E832D4E6099E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1D6211295B551100D093A4 /* PBXTargetDependency */,
+			);
+			name = VipspadUITests;
+			productName = VipspadUITests;
+			productReference = BB1D620F295B551100D093A4 /* VipspadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB1D61E6295B550E00D093A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BB1D61ED295B550E00D093A4 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BB1D6203295B551100D093A4 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BB1D61ED295B550E00D093A4;
+					};
+					BB1D620E295B551100D093A4 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BB1D61ED295B550E00D093A4;
+					};
+				};
+			};
+			buildConfigurationList = BB1D61E9295B550E00D093A4 /* Build configuration list for PBXProject "Vipspad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB1D61E5295B550E00D093A4;
+			productRefGroup = BB1D61EF295B550E00D093A4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BB7EB349296B525000C4DE50 /* Products */;
+					ProjectRef = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BB1D61ED295B550E00D093A4 /* Vipspad */,
+				BB1D6203295B551100D093A4 /* VipspadTests */,
+				BB1D620E295B551100D093A4 /* VipspadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BB7EB350296B525000C4DE50 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = BB7EB34F296B525000C4DE50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB7EB352296B525000C4DE50 /* Pods_Vipspad.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Vipspad.framework;
+			remoteRef = BB7EB351296B525000C4DE50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB7EB354296B525000C4DE50 /* Pods_Vipspad_VipspadUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Vipspad_VipspadUITests.framework;
+			remoteRef = BB7EB353296B525000C4DE50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB7EB356296B525000C4DE50 /* Pods_VipspadTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_VipspadTests.framework;
+			remoteRef = BB7EB355296B525000C4DE50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB1D61EC295B550E00D093A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D61FE295B551000D093A4 /* LaunchScreen.storyboard in Resources */,
+				BB1D61FB295B551000D093A4 /* Assets.xcassets in Resources */,
+				BB990B7B296B4E5C003C8A42 /* Podfile in Resources */,
+				BB1D61F9295B550E00D093A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D6202295B551100D093A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D620D295B551100D093A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C50D7EA60228B651D416A90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vipspad-VipspadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C76515BADC2CDA4FC35D1F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VipspadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		752EFD4A208E832D4E6099E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vipspad-VipspadUITests/Pods-Vipspad-VipspadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vipspad-VipspadUITests/Pods-Vipspad-VipspadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vipspad-VipspadUITests/Pods-Vipspad-VipspadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9444D08E4E23886225E2EBA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vipspad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B073CF052A7467F8FB64E332 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vipspad/Pods-Vipspad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vipspad/Pods-Vipspad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vipspad/Pods-Vipspad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB1D61EA295B550E00D093A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7EB3B2296B704900C4DE50 /* User.swift in Sources */,
+				BB7EB3B8296B722600C4DE50 /* VipsAPIEndpoints.swift in Sources */,
+				BB1D6245295B5B3A00D093A4 /* MainViewInteractor.swift in Sources */,
+				BB990B79296B4CD4003C8A42 /* AlamofireService.swift in Sources */,
+				BB7EB3B0296B6ECE00C4DE50 /* VipsAPIContract.swift in Sources */,
+				BB1D6243295B5B3A00D093A4 /* MainViewRouter.swift in Sources */,
+				BB7EB3B4296B717A00C4DE50 /* Post.swift in Sources */,
+				BB1D61F6295B550E00D093A4 /* ViewController.swift in Sources */,
+				BB1D6225295B55DF00D093A4 /* BaseViperContract.swift in Sources */,
+				BB1D6242295B5B3A00D093A4 /* MainViewPresenter.swift in Sources */,
+				BB1D6244295B5B3A00D093A4 /* MainViewViewController.swift in Sources */,
+				BB1D61F2295B550E00D093A4 /* AppDelegate.swift in Sources */,
+				BB7EB3B6296B719000C4DE50 /* Category.swift in Sources */,
+				BB1D6241295B5B3A00D093A4 /* MainViewContract.swift in Sources */,
+				BB1D6227295B560C00D093A4 /* Singleton.swift in Sources */,
+				BB1D61F4295B550E00D093A4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D6200295B551100D093A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D6209295B551100D093A4 /* VipspadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D620B295B551100D093A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1D6214295B551100D093A4 /* VipspadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB1D6206295B551100D093A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1D61ED295B550E00D093A4 /* Vipspad */;
+			targetProxy = BB1D6205295B551100D093A4 /* PBXContainerItemProxy */;
+		};
+		BB1D6211295B551100D093A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1D61ED295B550E00D093A4 /* Vipspad */;
+			targetProxy = BB1D6210295B551100D093A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB1D61F7295B550E00D093A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1D61F8295B550E00D093A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB1D61FC295B551000D093A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1D61FD295B551000D093A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB1D6216295B551100D093A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB1D6217295B551100D093A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB1D6219295B551100D093A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B936B216D57B99825654C75 /* Pods-Vipspad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = LP73L8HZC4;
+				INFOPLIST_FILE = Vipspad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.Vipspad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB1D621A295B551100D093A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BA589E573FAFE408FC961C /* Pods-Vipspad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = LP73L8HZC4;
+				INFOPLIST_FILE = Vipspad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.Vipspad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB1D621C295B551100D093A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE251B27FD7A980A94DE239 /* Pods-VipspadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VipspadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.VipspadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vipspad.app/Vipspad";
+			};
+			name = Debug;
+		};
+		BB1D621D295B551100D093A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E475B5866A76FA1E5C1FD38D /* Pods-VipspadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VipspadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.VipspadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vipspad.app/Vipspad";
+			};
+			name = Release;
+		};
+		BB1D621F295B551100D093A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3094A4691C118C00376B4D5 /* Pods-Vipspad-VipspadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VipspadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.VipspadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vipspad;
+			};
+			name = Debug;
+		};
+		BB1D6220295B551100D093A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFE3C71DA5250DDD5988215 /* Pods-Vipspad-VipspadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VipspadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.VipspadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vipspad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB1D61E9295B550E00D093A4 /* Build configuration list for PBXProject "Vipspad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D6216295B551100D093A4 /* Debug */,
+				BB1D6217295B551100D093A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1D6218295B551100D093A4 /* Build configuration list for PBXNativeTarget "Vipspad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D6219295B551100D093A4 /* Debug */,
+				BB1D621A295B551100D093A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1D621B295B551100D093A4 /* Build configuration list for PBXNativeTarget "VipspadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D621C295B551100D093A4 /* Debug */,
+				BB1D621D295B551100D093A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1D621E295B551100D093A4 /* Build configuration list for PBXNativeTarget "VipspadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1D621F295B551100D093A4 /* Debug */,
+				BB1D6220295B551100D093A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB1D61E6295B550E00D093A4 /* Project object */;
+}
