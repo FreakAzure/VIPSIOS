@@ -9,19 +9,19 @@
 import Foundation
 import UIKit
 
-class MainViewRouter: PresenterToRouterMainViewProtocol {
+class LoginRouter: PresenterToRouterLoginProtocol {
     
     // MARK: Static methods
     static func createModule() -> UIViewController {
         
-        let viewController = MainViewViewController()
+        let viewController = LoginViewController()
         
-        let interactor = MainViewInteractor()
+        let interactor = LoginInteractor()
         
-        let presenter = MainViewPresenter(
+        let presenter = LoginPresenter(
             view: viewController,
             interactor: interactor,
-            router: MainViewRouter()
+            router: LoginRouter()
         )
         
         viewController.presenter = presenter

@@ -8,8 +8,8 @@
 
 import Foundation
 
-class MainViewInteractor: PresenterToInteractorMainViewProtocol {
+class LoginInteractor: PresenterToInteractorLoginProtocol {
 
     // MARK: Properties
-    var presenter: MainViewPresenter?
+    var presenter: LoginPresenter?
 }

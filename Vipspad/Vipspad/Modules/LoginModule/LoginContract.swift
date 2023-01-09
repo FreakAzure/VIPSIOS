@@ -10,13 +10,13 @@ import Foundation
 
 
 // MARK: Router Input (Presenter -> Router)
-protocol PresenterToRouterMainViewProtocol : BaseViperRouter  {
+protocol PresenterToRouterLoginProtocol : BaseViperRouter  {
     
 }
 
 
 // MARK: View Input (View -> Presenter)
-protocol ViewToPresenterMainViewProtocol : BaseViperPresenter  {
+protocol ViewToPresenterLoginProtocol : BaseViperPresenter  {
     
     func viewDidLoad()
     
@@ -24,19 +24,19 @@ protocol ViewToPresenterMainViewProtocol : BaseViperPresenter  {
 
 
 // MARK: Interactor Input (Presenter -> Interactor)
-protocol PresenterToInteractorMainViewProtocol : BaseViperInteractor  {
+protocol PresenterToInteractorLoginProtocol : BaseViperInteractor  {
     
 }
 
 
 // MARK: Interactor Output (Interactor -> Presenter)
-protocol InteractorToPresenterMainViewProtocol : BaseViperPresenter  {
+protocol InteractorToPresenterLoginProtocol : BaseViperPresenter  {
     
 }
 
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToViewMainViewProtocol : BaseViperViewController {
+protocol PresenterToViewLoginProtocol : BaseViperViewController {
    
 }
 
@@ -44,11 +44,11 @@ protocol PresenterToViewMainViewProtocol : BaseViperViewController {
 /// Optional use situationals
 
 // MARK: Router Input (ParentPresenter -> Presenter)
-protocol ParentPresenterToPresenterMainViewProtocol : class
+protocol ParentPresenterToPresenterLoginProtocol : class
 {}
 
 // MARK: Router Input (Presenter -> ParentPresenter)
-protocol PresenterToParentPresenterMainViewProtocol : class
+protocol PresenterToParentPresenterLoginProtocol : class
 {}
 
 /**
@@ -56,5 +56,5 @@ protocol PresenterToParentPresenterMainViewProtocol : class
  Reference ParentPresenter -> Interactor avoids, having child interactor references into parent interactor. And avoids child presenter have references of entities.
  */
 // MARK: Router Input (ParentPresenter -> Interactor)
-protocol ParentPresenterToInteractorMainViewProtocol : class
+protocol ParentPresenterToInteractorLoginProtocol : class
 {}

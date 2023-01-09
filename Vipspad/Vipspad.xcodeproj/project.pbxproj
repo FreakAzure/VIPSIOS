@@ -16,11 +16,11 @@
 		BB1D6214295B551100D093A4 /* VipspadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6213295B551100D093A4 /* VipspadUITests.swift */; };
 		BB1D6225295B55DF00D093A4 /* BaseViperContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6224295B55DF00D093A4 /* BaseViperContract.swift */; };
 		BB1D6227295B560C00D093A4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6226295B560C00D093A4 /* Singleton.swift */; };
-		BB1D6241295B5B3A00D093A4 /* MainViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623C295B5B3A00D093A4 /* MainViewContract.swift */; };
-		BB1D6242295B5B3A00D093A4 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623D295B5B3A00D093A4 /* MainViewPresenter.swift */; };
-		BB1D6243295B5B3A00D093A4 /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623E295B5B3A00D093A4 /* MainViewRouter.swift */; };
-		BB1D6244295B5B3A00D093A4 /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623F295B5B3A00D093A4 /* MainViewViewController.swift */; };
-		BB1D6245295B5B3A00D093A4 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6240295B5B3A00D093A4 /* MainViewInteractor.swift */; };
+		BB1D6241295B5B3A00D093A4 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623C295B5B3A00D093A4 /* LoginContract.swift */; };
+		BB1D6242295B5B3A00D093A4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623D295B5B3A00D093A4 /* LoginPresenter.swift */; };
+		BB1D6243295B5B3A00D093A4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623E295B5B3A00D093A4 /* LoginRouter.swift */; };
+		BB1D6244295B5B3A00D093A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D623F295B5B3A00D093A4 /* LoginViewController.swift */; };
+		BB1D6245295B5B3A00D093A4 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6240295B5B3A00D093A4 /* LoginInteractor.swift */; };
 		BB7EB341296B515900C4DE50 /* Pods_Vipspad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B029C18E0C7CE10249DC2790 /* Pods_Vipspad.framework */; };
 		BB7EB342296B515900C4DE50 /* Pods_Vipspad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B029C18E0C7CE10249DC2790 /* Pods_Vipspad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB7EB3B0296B6ECE00C4DE50 /* VipsAPIContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7EB3AF296B6ECE00C4DE50 /* VipsAPIContract.swift */; };
@@ -113,11 +113,11 @@
 		BB1D6215295B551100D093A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB1D6224295B55DF00D093A4 /* BaseViperContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViperContract.swift; sourceTree = "<group>"; };
 		BB1D6226295B560C00D093A4 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		BB1D623C295B5B3A00D093A4 /* MainViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContract.swift; sourceTree = "<group>"; };
-		BB1D623D295B5B3A00D093A4 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
-		BB1D623E295B5B3A00D093A4 /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
-		BB1D623F295B5B3A00D093A4 /* MainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
-		BB1D6240295B5B3A00D093A4 /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		BB1D623C295B5B3A00D093A4 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		BB1D623D295B5B3A00D093A4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BB1D623E295B5B3A00D093A4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		BB1D623F295B5B3A00D093A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB1D6240295B5B3A00D093A4 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		BB7EB347296B525000C4DE50 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		BB7EB348296B525000C4DE50 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		BB7EB359296B525000C4DE50 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
@@ -403,7 +403,7 @@
 		BB1D622E295B571700D093A4 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BB1D623B295B5B2300D093A4 /* MainViewModule */,
+				BB1D623B295B5B2300D093A4 /* LoginModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -416,16 +416,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BB1D623B295B5B2300D093A4 /* MainViewModule */ = {
+		BB1D623B295B5B2300D093A4 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
-				BB1D623C295B5B3A00D093A4 /* MainViewContract.swift */,
-				BB1D623D295B5B3A00D093A4 /* MainViewPresenter.swift */,
-				BB1D623E295B5B3A00D093A4 /* MainViewRouter.swift */,
-				BB1D623F295B5B3A00D093A4 /* MainViewViewController.swift */,
-				BB1D6240295B5B3A00D093A4 /* MainViewInteractor.swift */,
+				BB1D623C295B5B3A00D093A4 /* LoginContract.swift */,
+				BB1D623D295B5B3A00D093A4 /* LoginPresenter.swift */,
+				BB1D623E295B5B3A00D093A4 /* LoginRouter.swift */,
+				BB1D623F295B5B3A00D093A4 /* LoginViewController.swift */,
+				BB1D6240295B5B3A00D093A4 /* LoginInteractor.swift */,
 			);
-			path = MainViewModule;
+			path = LoginModule;
 			sourceTree = "<group>";
 		};
 		BB7EB346296B525000C4DE50 /* Local Podspecs */ = {
@@ -888,17 +888,17 @@
 			files = (
 				BB7EB3B2296B704900C4DE50 /* User.swift in Sources */,
 				BB7EB3B8296B722600C4DE50 /* VipsAPIEndpoints.swift in Sources */,
-				BB1D6245295B5B3A00D093A4 /* MainViewInteractor.swift in Sources */,
+				BB1D6245295B5B3A00D093A4 /* LoginInteractor.swift in Sources */,
 				BB990B79296B4CD4003C8A42 /* AlamofireService.swift in Sources */,
 				BB7EB3B0296B6ECE00C4DE50 /* VipsAPIContract.swift in Sources */,
-				BB1D6243295B5B3A00D093A4 /* MainViewRouter.swift in Sources */,
+				BB1D6243295B5B3A00D093A4 /* LoginRouter.swift in Sources */,
 				BB7EB3B4296B717A00C4DE50 /* Post.swift in Sources */,
 				BB1D6225295B55DF00D093A4 /* BaseViperContract.swift in Sources */,
-				BB1D6242295B5B3A00D093A4 /* MainViewPresenter.swift in Sources */,
-				BB1D6244295B5B3A00D093A4 /* MainViewViewController.swift in Sources */,
+				BB1D6242295B5B3A00D093A4 /* LoginPresenter.swift in Sources */,
+				BB1D6244295B5B3A00D093A4 /* LoginViewController.swift in Sources */,
 				BB1D61F2295B550E00D093A4 /* AppDelegate.swift in Sources */,
 				BB7EB3B6296B719000C4DE50 /* Category.swift in Sources */,
-				BB1D6241295B5B3A00D093A4 /* MainViewContract.swift in Sources */,
+				BB1D6241295B5B3A00D093A4 /* LoginContract.swift in Sources */,
 				BB1D6227295B560C00D093A4 /* Singleton.swift in Sources */,
 				BB1D61F4295B550E00D093A4 /* SceneDelegate.swift in Sources */,
 			);

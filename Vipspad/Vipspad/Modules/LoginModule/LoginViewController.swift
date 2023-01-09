@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     private lazy var helloText: UILabel = {
         let text = UILabel()
@@ -17,6 +17,8 @@ class MainViewViewController: UIViewController {
         text.textColor = .black
         return text
     } ()
+    
+    private lazy var loginButton
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -27,16 +29,16 @@ class MainViewViewController: UIViewController {
     }
 
     // MARK: - Properties
-    var presenter: MainViewPresenter?
+    var presenter: LoginPresenter?
     
 }
 
-extension MainViewViewController: PresenterToViewMainViewProtocol{
+extension LoginViewController: PresenterToViewLoginProtocol{
     // TODO: Implement View Output Methods
 }
 
 // MARK: - UI Setup
-extension MainViewViewController {
+extension LoginViewController {
     
     private func setupUI() {
         self.view.backgroundColor = .brown

@@ -28,14 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         window = UIWindow()
         window?.overrideUserInterfaceStyle = .dark
-        self.window?.rootViewController = MainViewRouter.createModule()
+        self.window?.rootViewController = LoginRouter.createModule()
         window?.makeKeyAndVisible()
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                 let window = UIWindow(windowScene: windowScene)
-                window.rootViewController = MainViewRouter.createModule()
+                window.rootViewController = LoginRouter.createModule()
                 self.window = window
                 window.makeKeyAndVisible()
         }
