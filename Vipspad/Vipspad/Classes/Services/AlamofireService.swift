@@ -133,6 +133,7 @@ class AlamofireService {
 
 // MARK: WebelAPIContractRegister
 extension AlamofireService: APIContract {
+    
     func getSelfData(callback: APICallback<User>) {
         endpointCall(path: VipsAPIEndpoints.GET_SELF, params: noneParam)  { (user: User) -> Void in
             callback.success(user)

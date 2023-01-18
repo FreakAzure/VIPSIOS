@@ -14,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let viewController = LoginRouter.createModule()
+        Navigation.shared.setRoot(viewController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.overrideUserInterfaceStyle = .dark
+        window?.makeKeyAndVisible()
+        self.window?.rootViewController = Navigation.shared.navigationController
         return true
     }
 
@@ -26,18 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        window = UIWindow()
-        window?.overrideUserInterfaceStyle = .dark
-        self.window?.rootViewController = LoginRouter.createModule()
-        window?.makeKeyAndVisible()
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                 let window = UIWindow(windowScene: windowScene)
-                window.rootViewController = LoginRouter.createModule()
-                self.window = window
-                window.makeKeyAndVisible()
+        let viewController = LoginRouter.createModule()
+        Navigation.shared.setRoot(viewController)
+        window.overrideUserInterfaceStyle = .dark
+        window.makeKeyAndVisible()
+        self.window = window
+        self.window?.rootViewController = Navigation.shared.navigationController
         }
 }
 

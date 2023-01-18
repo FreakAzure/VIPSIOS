@@ -28,6 +28,10 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     
     
     func viewDidLoad() {}
+    
+    func launchWebView() {
+        router.openWebView()
+    }
 }
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {

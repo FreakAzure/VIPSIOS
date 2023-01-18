@@ -30,4 +30,8 @@ class LoginRouter: PresenterToRouterLoginProtocol {
         return viewController
     }
     
+    func openWebView() {
+        Navigation.shared.push(viewController: WebViewModuleRouter.createModule())
+    }
+    
 }
