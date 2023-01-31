@@ -11,6 +11,7 @@ import UIKit
 class PostTableViewCell: UITableViewCell {
     
     var post: Post?
+    var delegate: PostTableViewCellDelegate?
     
     private  lazy var collectionView: UICollectionView  = {
         let layout = UICollectionViewFlowLayout()
@@ -97,7 +98,7 @@ class PostTableViewCell: UITableViewCell {
     
     private lazy var webIcon: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "explorer_icon")
+        imageView.image = UIImage(named: "web_round")?.withTintColor(.white)
         imageView.contentMode = .scaleAspectFit
         return imageView
     } ()
@@ -114,13 +115,13 @@ class PostTableViewCell: UITableViewCell {
         NSLayoutConstraint(item: webLabel, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: webLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: webLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: webLabel, attribute: .trailing, relatedBy: .equal, toItem: webIcon, attribute: .leading, multiplier: 1, constant: 8).isActive = true
+        NSLayoutConstraint(item: webLabel, attribute: .trailing, relatedBy: .equal, toItem: webIcon, attribute: .leading, multiplier: 1, constant: -4).isActive = true
 
         NSLayoutConstraint(item: webIcon, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: webIcon, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: webIcon, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
 
-        NSLayoutConstraint(item: webIcon, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: 30).isActive = true
+        NSLayoutConstraint(item: webIcon, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: 14).isActive = true
         NSLayoutConstraint(item: webIcon, attribute: .width, relatedBy: .equal, toItem: webIcon, attribute: .height, multiplier: 1, constant: 0).isActive = true
         
         return view
@@ -135,7 +136,7 @@ class PostTableViewCell: UITableViewCell {
     
     private lazy var discordIcon: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "discord_icon")
+        imageView.image = UIImage(named: "discord_round")
         imageView.contentMode = .scaleAspectFit
         return imageView
     } ()
@@ -152,23 +153,37 @@ class PostTableViewCell: UITableViewCell {
         NSLayoutConstraint(item: discordLabel, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: discordLabel, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: discordLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: discordLabel, attribute: .trailing, relatedBy: .equal, toItem: discordIcon, attribute: .leading, multiplier: 1, constant: 8).isActive = true
+        NSLayoutConstraint(item: discordLabel, attribute: .trailing, relatedBy: .equal, toItem: discordIcon, attribute: .leading, multiplier: 1, constant: -4).isActive = true
 
         NSLayoutConstraint(item: discordIcon, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: discordIcon, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: discordIcon, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
 
-        NSLayoutConstraint(item: discordIcon, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: 30).isActive = true
+        NSLayoutConstraint(item: discordIcon, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: 14).isActive = true
         NSLayoutConstraint(item: discordIcon, attribute: .width, relatedBy: .equal, toItem: discordIcon, attribute: .height, multiplier: 1, constant: 0).isActive = true
         
         return view
     } ()
     
+    @objc private func webClicked() {
+        guard let post = self.post else {return}
+        delegate?.openWebView(link: post.marketURL)
+    }
     
+    @objc private func discordClicked() {
+        guard let post = self.post else{ return }
+        delegate?.openWebView(link: post.discordURL)
+    }
+    
+    @objc private func deleteClicked() {
+        guard let post = self.post else{ return }
+        delegate?.deletePost(postId: post.id)
+    }
     
     func setupCell(post: Post) {
         self.post = post
         setupUI()
+        setupClicks()
     }
     
     private func setupUI(){
@@ -238,7 +253,7 @@ class PostTableViewCell: UITableViewCell {
         NSLayoutConstraint(item: networkLabel, attribute: .bottom, relatedBy: .equal, toItem: self.contentView, attribute: .bottom, multiplier: 1, constant: -20).isActive = true
         
         NSLayoutConstraint(item: webButtonView, attribute: .top, relatedBy: .equal, toItem: postComment, attribute: .bottom, multiplier: 1, constant: 10).isActive = true
-        NSLayoutConstraint(item: webButtonView, attribute: .leading, relatedBy: .equal, toItem: self.networkLabel, attribute: .trailing, multiplier: 1, constant: 8).isActive = true
+        NSLayoutConstraint(item: webButtonView, attribute: .leading, relatedBy: .equal, toItem: self.networkLabel, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: webButtonView, attribute: .bottom, relatedBy: .equal, toItem: self.contentView, attribute: .bottom, multiplier: 1, constant: -20).isActive = true
         
         NSLayoutConstraint(item: discordButtonView, attribute: .top, relatedBy: .equal, toItem: postComment, attribute: .bottom, multiplier: 1, constant: 10).isActive = true
@@ -252,6 +267,17 @@ class PostTableViewCell: UITableViewCell {
         networkLabel.text = "RED: \(post.network.name)"
         postHoster.text = "@\(post.creator.name)"
         dateLabel.text = post.createdAt.convertDateString(fromFormat: "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ", toFormat: "MMM d, yyyy")
+    }
+    
+    private func setupClicks() {
+        let webGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(webClicked))
+        let discordGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(discordClicked))
+        let deleteGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(deleteClicked))
+        webLabel.isUserInteractionEnabled = true
+        webLabel.addGestureRecognizer(webGestureRecognizer)
+        discordLabel.isUserInteractionEnabled = true
+        discordLabel.addGestureRecognizer(discordGestureRecognizer)
+        
     }
 }
 
@@ -282,6 +308,16 @@ extension PostTableViewCell : UICollectionViewDelegate, UICollectionViewDataSour
                    .rounded(.toNearestOrAwayFromZero))
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let post = self.post else { return }
+        switch indexPath.row{
+        case 0:
+            delegate?.imageClicked(imageURL: post.imageURL)
+        default:
+            delegate?.imageClicked(imageURL: post.image2URL)
+        }
+    }
+    
 }
 
 extension PostTableViewCell : UICollectionViewDelegateFlowLayout {
@@ -291,4 +327,10 @@ extension PostTableViewCell : UICollectionViewDelegateFlowLayout {
 
         return CGSize(width: width, height: height)
     }
+}
+
+protocol PostTableViewCellDelegate {
+    func imageClicked(imageURL: String)
+    func deletePost(postId: Int)
+    func openWebView(link: String)
 }

@@ -9,6 +9,8 @@
 import Foundation
 
 class CreatePostModulePresenter: ViewToPresenterCreatePostModuleProtocol {
+    var networks = [BaseProp]()
+    var risks = [BaseProp]()
     
     required init(
         view: CreatePostModuleViewController,
@@ -27,9 +29,22 @@ class CreatePostModulePresenter: ViewToPresenterCreatePostModuleProtocol {
     var router: CreatePostModuleRouter
     
     
-    func viewDidLoad() {}
+    func viewDidLoad() {
+        self.interactor.retrieveNetworks()
+        self.interactor.retrieveRisks()
+    }
 }
 
 extension CreatePostModulePresenter: InteractorToPresenterCreatePostModuleProtocol {
+    func networksRetrieved(networks: [BaseProp]) {
+        self.networks = networks
+        guard let vc = view else { return }
+        vc.updateNetworks()
+    }
     
+    func risksRetrieved(risks: [BaseProp]) {
+        self.risks = risks
+        guard let vc = view else { return }
+        vc.updateRisks()
+    }
 }

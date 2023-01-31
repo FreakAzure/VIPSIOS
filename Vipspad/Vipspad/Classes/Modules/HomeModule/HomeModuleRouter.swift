@@ -38,4 +38,8 @@ class HomeModuleRouter: PresenterToRouterHomeModuleProtocol {
         Navigation.shared.push(viewController: PostFeedModuleRouter.createModule(category: category))
     }
     
+    func navigateToCreatePost() {
+        Navigation.shared.push(viewController: CreatePostModuleRouter.createModule())
+    }
+    
 }

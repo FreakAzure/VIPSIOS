@@ -112,7 +112,7 @@ class AlamofireService {
         success: @escaping () -> Void,
         failure: @escaping () -> Void)
     {
-        AF.upload(imageData, to: uploadURL, method: .put, headers: [.contentType(contentType)], fileManager: .default)
+        AF.upload(imageData, to: uploadURL, method: .post, headers: [.contentType(contentType)], fileManager: .default)
             .response { response in
                 debugPrint(response)
                 debugPrint(response.result)
@@ -161,6 +161,46 @@ extension AlamofireService: APIContract {
             callback.success(categories)
         } failure: { error in
             callback.failure(error)
+        }
+    }
+    
+    
+    func getRisks(callback: APICallback<[BaseProp]>) {
+        endpointCall(path: VipsAPIEndpoints.GET_RISKS, params: noneParam) { (risks: [BaseProp]) -> Void in
+            callback.success(risks)
+        } failure: { error in
+            callback.failure(error)
+        }
+    }
+    
+    
+    func getNetworks(callback: APICallback<[BaseProp]>) {
+        endpointCall(path: VipsAPIEndpoints.GET_NETWORKS, params: noneParam) { (networks: [BaseProp]) -> Void in
+            callback.success(networks)
+        } failure: { error in
+            callback.failure(error)
+        }
+    }
+    
+    func uploadPost(imagesArray: [UIImage], parameters: [String: String], callback: APICallback<IgnoreResponse>) {
+        guard let token = KeyChainService.shared.retrieveToken() else {
+            callback.failure("No token")
+            return
+        }
+        AF.upload(multipartFormData: { (multipartFormData) in
+            for (index, image) in imagesArray.enumerated() {
+                if let imageData = image.jpegData(compressionQuality: 0.5) {
+                    multipartFormData.append(imageData, withName: "images[]", fileName: "image\(index).jpg", mimeType: "image/jpeg")
+                }
+            }
+        }, to: "\(baseURL)\(VipsAPIEndpoints.UPLOAD_POST)", headers: [.authorization(token)]).response { (response) in
+            switch response.result{
+            case .success(_):
+                let apiDictionary = response.value
+                print("apiResponse --- \(String(describing: apiDictionary))")
+            case .failure(_):
+                print("got an error")
+            }
         }
     }
 }

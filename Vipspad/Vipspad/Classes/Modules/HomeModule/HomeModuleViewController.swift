@@ -42,6 +42,7 @@ class HomeModuleViewController: UIViewController {
     
     @objc func createPostClicked(sender: UITapGestureRecognizer) {
         // Aquí puedes escribir el código que deseas ejecutar cuando se detecte el click
+        presenter?.navigateToCreatePost()
         
     }
     

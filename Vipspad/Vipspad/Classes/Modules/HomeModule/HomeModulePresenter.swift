@@ -33,6 +33,10 @@ class HomeModulePresenter: ViewToPresenterHomeModuleProtocol {
         interactor.retrieveUserData()
         interactor.retrieveCategories()
     }
+    
+    func navigateToCreatePost() {
+        self.router.navigateToCreatePost()
+    }
 }
 
 extension HomeModulePresenter: InteractorToPresenterHomeModuleProtocol {
