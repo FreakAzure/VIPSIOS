@@ -27,7 +27,17 @@ class WebViewModulePresenter: ViewToPresenterWebViewModuleProtocol {
     var router: WebViewModuleRouter
     
     
-    func viewDidLoad() {}
+    func viewDidLoad() {
+        
+    }
+    
+    func validateAndSaveToken(_ token: String) {
+        if (RegexService.compare(pattern: "^([a-zA-Z0-9_=]+)\\.([a-zA-Z0-9_=]+)\\.([a-zA-Z0-9_\\-\\+\\/=]*)", text: token)) {
+            
+            KeyChainService.shared.saveToken(token)
+            router.setHomeAsRoot()
+        }
+    }
 }
 
 extension WebViewModulePresenter: InteractorToPresenterWebViewModuleProtocol {

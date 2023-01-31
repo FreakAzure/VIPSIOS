@@ -10,4 +10,5 @@ import Foundation
 struct VipsAPIEndpoints {
     static let GET_SELF = "auth/discord/me"
     static let GET_POSTS = "post/category"
+    static let GET_CATEGORIES = "category"
 }

@@ -9,16 +9,26 @@ import Foundation
 
 struct Post: Codable {
     let id: Int
-    let title, body: String
+    let title: String
+    let body: String
     let discordURL: String
-    let imageURL, image2URL: String
+    let imageURL: String
+    let image2URL: String
     let marketURL: String
-    let creatorID, categoryID, networkID, riskID: Int
+    let creatorID: Int
+    let categoryID: Int
+    let networkID: Int
+    let riskID: Int
     let createdAt: String
-    let creator, network, riskIndex, category: Category
+    let creator: BaseProp
+    let network: BaseProp
+    let riskIndex: BaseProp
+    let category: BaseProp
 
     enum CodingKeys: String, CodingKey {
-        case id, title, body
+        case id
+        case title
+        case body
         case discordURL = "discord_url"
         case imageURL = "image_url"
         case image2URL = "image2_url"
@@ -28,7 +38,8 @@ struct Post: Codable {
         case networkID = "network_id"
         case riskID = "risk_id"
         case createdAt = "created_at"
-        case creator, network
+        case creator
+        case network
         case riskIndex = "risk_index"
         case category
     }

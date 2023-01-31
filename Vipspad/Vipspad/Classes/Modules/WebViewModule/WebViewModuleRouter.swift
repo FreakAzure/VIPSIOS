@@ -30,4 +30,7 @@ class WebViewModuleRouter: PresenterToRouterWebViewModuleProtocol {
         return viewController
     }
     
+    func setHomeAsRoot() {
+        Navigation.shared.setRoot(HomeModuleRouter.createModule())
+    }
 }

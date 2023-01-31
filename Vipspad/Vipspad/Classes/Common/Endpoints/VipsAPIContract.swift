@@ -31,7 +31,13 @@ protocol APIContract {
     )
     
     func getPostFeed(
-        page: String, category_id: Int,
+        page: Int, category_id: Int,
         callback : APICallback<Posts>
     )
+}
+
+struct GetPostsRequest: Encodable {
+    let page: Int?
+    let category_id: Int
+    
 }

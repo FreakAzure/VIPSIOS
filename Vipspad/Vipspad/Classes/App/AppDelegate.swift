@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AlamofireService.configure(application: self)
         let viewController = LoginRouter.createModule()
         Navigation.shared.setRoot(viewController)
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -37,7 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
                 let window = UIWindow(windowScene: windowScene)
-        let viewController = LoginRouter.createModule()
+        var viewController = HomeModuleRouter.createModule()
+        if (!KeyChainService.shared.checkApiToken()) {
+            viewController = LoginRouter.createModule()
+        }
         Navigation.shared.setRoot(viewController)
         window.overrideUserInterfaceStyle = .dark
         window.makeKeyAndVisible()

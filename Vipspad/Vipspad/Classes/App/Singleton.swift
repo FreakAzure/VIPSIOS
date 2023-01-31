@@ -12,4 +12,5 @@ class Singleton: NSObject {
     static let shared = Singleton()
     
     var authToken = ""
+    var user: User? = nil
 }

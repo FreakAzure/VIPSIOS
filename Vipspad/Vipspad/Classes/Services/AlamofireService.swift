@@ -59,12 +59,16 @@ class AlamofireService {
 
         guard let url = URL(string: "\(baseURL)\(path)")
         else { fatalError("Cannot retrivea a valid URL with: \(baseURL)\(path)") }
+        guard let token = KeyChainService.shared.retrieveToken() else {
+            failure("No token")
+            return
+        }
         var urlRequest = URLRequest(url: url)
 
         urlRequest.method = method
         urlRequest.headers = [
             .contentType("application/json"),
-            .authorization(Singleton.shared.authToken),
+            .authorization(token),
         ]
 
         if let params = params {
@@ -142,9 +146,21 @@ extension AlamofireService: APIContract {
         }
     }
     
-    func getPostFeed(page: String, category_id: Int, callback: APICallback<Posts>) {
+    func getPostFeed(page: Int, category_id: Int, callback: APICallback<Posts>) {
         
+        endpointCall(path: VipsAPIEndpoints.GET_POSTS + "?category_id=\(category_id)", params: noneParam) { (posts: Posts) in
+            callback.success(posts)
+        } failure: { error in
+            callback.failure(error)
+        }
+
     }
     
-
+    func getCategories(callback: APICallback<Categories>) {
+        endpointCall(path: VipsAPIEndpoints.GET_CATEGORIES, params: noneParam) { (categories: Categories) -> Void in
+            callback.success(categories)
+        } failure: { error in
+            callback.failure(error)
+        }
+    }
 }

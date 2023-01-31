@@ -6,6 +6,8 @@ target 'Vipspad' do
   use_frameworks!
   # Pods for Vipspad
   pod 'Alamofire'
+  pod 'KeychainSwift'
+
   target 'VipspadTests' do
     inherit! :search_paths
     # Pods for testing
