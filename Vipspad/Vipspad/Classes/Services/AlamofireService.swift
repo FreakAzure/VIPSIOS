@@ -14,22 +14,22 @@ import UIKit
 // MARK: - AlamofireService
 // swiftlint:disable file_length
 class AlamofireService {
-
+    
     // MARK: Lifecycle
     private init(application: AppDelegate) {
         self.application = application
     }
-
+    
     // MARK: Internal
     struct IgnoreResponse: Codable {}
-
+    
     // swiftlint:disable implicitly_unwrapped_optional
     private(set) static var shared: AlamofireService!
-
+    
     static func configure(application: AppDelegate) {
         shared = .init(application: application)
     }
-
+    
     // MARK: Private
     private enum RequestTime: Double {
         /// Quick connection and Backend with function hot preloaded
@@ -41,13 +41,13 @@ class AlamofireService {
         /// Slow connection and Backend with function not preloaded
         case slower = 2
     }
-
+    
     private weak var application: AppDelegate?
     // swiftformat:disable:next typeSugar
     private let noneParam = Optional<[String: String]>.none
-
+    
     private let baseURL: String = "https://v1psend-production.up.railway.app/api/v1/"
-
+    
     private func endpointCall<D: Decodable, T: Encodable>(
         path: String,
         method: HTTPMethod = .get,
@@ -56,7 +56,7 @@ class AlamofireService {
         success: @escaping (D) -> Void,
         failure: @escaping (String) -> Void)
     {
-
+        
         guard let url = URL(string: "\(baseURL)\(path)")
         else { fatalError("Cannot retrivea a valid URL with: \(baseURL)\(path)") }
         guard let token = KeyChainService.shared.retrieveToken() else {
@@ -64,49 +64,49 @@ class AlamofireService {
             return
         }
         var urlRequest = URLRequest(url: url)
-
+        
         urlRequest.method = method
         urlRequest.headers = [
             .contentType("application/json"),
             .authorization(token),
         ]
-
+        
         if let params = params {
             urlRequest = (try? JSONParameterEncoder.default.encode(params, into: urlRequest)) ?? urlRequest
         }
-
+        
         AF.request(urlRequest)
             .validate(contentType: ["application/json"])
             .responseDecodable(of: D.self) { response in
-
+                
                 let statusCode = response.response?.statusCode ?? -1
-
+                
                 switch response.result {
-                    case .success:
-                        if let response = response.value {
-                            success(response)
-                            return
-                        }
-
-                    case let .failure(error):
-                        debugPrint(response)
-                        debugPrint(error)
-                        //                    debugPrint(response.result)
-                        //                    debugPrint(error.errorDescription!)
-                        failure(
-                            error.localizedDescription + " " + String(statusCode)
-                        )
+                case .success:
+                    if let response = response.value {
+                        success(response)
                         return
-
+                    }
+                    
+                case let .failure(error):
+                    debugPrint(response)
+                    debugPrint(error)
+                    //                    debugPrint(response.result)
+                    //                    debugPrint(error.errorDescription!)
+                    failure(
+                        error.localizedDescription + " " + String(statusCode)
+                    )
+                    return
+                    
                 }
                 failure(
                     "Failed request"
                 )
-
+                
             }
-
+        
     }
-
+    
     private func uploadImage(
         imageData: Data, contentType: String, uploadURL: URL,
         success: @escaping () -> Void,
@@ -119,7 +119,7 @@ class AlamofireService {
                 success()
             }
     }
-
+    
     private func simulateRequest(
         requestTime: RequestTime = .normal,
         executeAction: @escaping () -> Void)
@@ -128,11 +128,11 @@ class AlamofireService {
             executeAction()
         }
     }
-
+    
     private func genericErrorHandler(error: String) {
         debugPrint("Handle \(error)")
     }
-
+    
 }
 
 // MARK: WebelAPIContractRegister
@@ -153,7 +153,7 @@ extension AlamofireService: APIContract {
         } failure: { error in
             callback.failure(error)
         }
-
+        
     }
     
     func getCategories(callback: APICallback<Categories>) {
@@ -182,24 +182,29 @@ extension AlamofireService: APIContract {
         }
     }
     
-    func uploadPost(imagesArray: [UIImage], parameters: [String: String], callback: APICallback<IgnoreResponse>) {
+    func uploadPost(imagesArray: [UIImage], parameters: [String: String], callback: APICallback<IgnoreResponse?>) {
         guard let token = KeyChainService.shared.retrieveToken() else {
             callback.failure("No token")
             return
         }
-        AF.upload(multipartFormData: { (multipartFormData) in
+        AF.upload( multipartFormData: { (multipartFormData) in
+            for (key, value) in parameters {
+                multipartFormData.append(value.data(using: .utf8)!, withName: key)
+            }
             for (index, image) in imagesArray.enumerated() {
                 if let imageData = image.jpegData(compressionQuality: 0.5) {
-                    multipartFormData.append(imageData, withName: "images[]", fileName: "image\(index).jpg", mimeType: "image/jpeg")
+                    multipartFormData.append(imageData, withName: "file", fileName: "image\(index).jpg", mimeType: "image/jpeg")
                 }
             }
-        }, to: "\(baseURL)\(VipsAPIEndpoints.UPLOAD_POST)", headers: [.authorization(token)]).response { (response) in
+        }, to: "\(baseURL)\(VipsAPIEndpoints.UPLOAD_POST)", method: .post, headers: [.authorization(token)]).response { (response) in
             switch response.result{
-            case .success(_):
-                let apiDictionary = response.value
+            case .success(let response):
+                print(response)
+                let apiDictionary = response
                 print("apiResponse --- \(String(describing: apiDictionary))")
+                callback.success(nil)
             case .failure(_):
-                print("got an error")
+                callback.failure("Error uploading post")
             }
         }
     }

@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Foundation
+
 
 class CreatePostModuleViewController: UIViewController {
     
     
     private var imageContext = ImageContext.Image1
     
-    private var imagePicker: UIImagePickerController = {
+    private lazy var imagePicker: UIImagePickerController = {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .savedPhotosAlbum
@@ -28,6 +30,7 @@ class CreatePostModuleViewController: UIViewController {
         button.layer.borderWidth = 2
         button.layer.borderColor = UIColor.orange.cgColor
         button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        button.addTarget(self, action: #selector(chooseImage1), for: .touchUpInside)
         button.sizeToFit()
         button.clipsToBounds = true
         return button
@@ -40,6 +43,7 @@ class CreatePostModuleViewController: UIViewController {
         button.layer.borderWidth = 2
         button.layer.borderColor = UIColor.orange.cgColor
         button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        button.addTarget(self, action: #selector(chooseImage2), for: .touchUpInside)
         button.clipsToBounds = true
         button.sizeToFit()
         return button
@@ -127,14 +131,16 @@ class CreatePostModuleViewController: UIViewController {
     
     @objc private func chooseImage1() {
         self.imageContext = .Image1
+        present(imagePicker, animated: true)
     }
     
     @objc private func chooseImage2() {
         self.imageContext = .Image2
+        present(imagePicker, animated: true)
     }
     
     @objc private func createPostClicked() {
-        
+        presenter?.createPost(title: postTitle.text, body: postBody.text, discordUrl: discordUrl.text, externalUrl: externalUrl.text)
     }
     
     
@@ -144,7 +150,7 @@ class CreatePostModuleViewController: UIViewController {
         super.viewDidLoad()
         self.presenter?.viewDidLoad()
     }
-
+    
     // MARK: - Properties
     var presenter: CreatePostModulePresenter?
     
@@ -159,6 +165,14 @@ extension CreatePostModuleViewController: PresenterToViewCreatePostModuleProtoco
     
     func updateNetworks() {
         networksPicker.reloadAllComponents()
+    }
+    
+    func postUploaded() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func showUploadError() {
+        Toast.text("Error creando post! Comprueba los campos")
     }
 }
 
@@ -219,12 +233,12 @@ extension CreatePostModuleViewController {
         NSLayoutConstraint(item: postTitle, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 20).isActive = true
         NSLayoutConstraint(item: postTitle, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: -20).isActive = true
         NSLayoutConstraint(item: postTitle, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: 50).isActive = true
-
+        
         NSLayoutConstraint(item: postBody, attribute: .top, relatedBy: .equal, toItem: postTitle, attribute: .bottom, multiplier: 1, constant: 15).isActive = true
         NSLayoutConstraint(item: postBody, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 20).isActive = true
         NSLayoutConstraint(item: postBody, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: -20).isActive = true
         NSLayoutConstraint(item: postBody, attribute: .height, relatedBy: .equal, toItem: .none, attribute: .notAnAttribute, multiplier: 1, constant: 50).isActive = true
-
+        
         NSLayoutConstraint(item: discordUrl, attribute: .top, relatedBy: .equal, toItem: postBody, attribute: .bottom, multiplier: 1, constant: 15).isActive = true
         NSLayoutConstraint(item: discordUrl, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 20).isActive = true
         NSLayoutConstraint(item: discordUrl, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: -20).isActive = true
@@ -245,14 +259,14 @@ extension CreatePostModuleViewController {
         let color1 =  UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         let color2 = UIColor(red: 9.0/255.0, green: 9.0/255.0, blue: 9.0/255.0, alpha: 1.0).cgColor
         let color3 = UIColor(red: 33.0/255.0, green: 33.0/255.0, blue: 33.0/255.0, alpha: 1.0).cgColor
-                    
+        
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [color1, color2, color3]
         gradientLayer.locations = [0,0, 1.0]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         gradientLayer.frame = self.view.bounds
-                
+        
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
     
@@ -283,11 +297,30 @@ extension CreatePostModuleViewController: UIPickerViewDelegate, UIPickerViewData
             return self.presenter?.risks[row].name ?? ""
         }
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if (pickerView == networksPicker) {
+            presenter?.networkSelected(row)
+        } else {
+            presenter?.riskSelected(row)
+        }
+        
+    }
 }
 
 extension CreatePostModuleViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
+        switch(imageContext) {
+        case .Image1 :
+            guard let image = info[.originalImage] as? UIImage else { return }
+            self.presenter?.imagePicked(image, for: self.imageContext)
+            image1Button.backgroundColor = .orange.withAlphaComponent(0.4)
+        case .Image2 :
+            guard let image = info[.originalImage] as? UIImage else { return }
+            self.presenter?.imagePicked(image, for: self.imageContext)
+            image2Button.backgroundColor = .orange.withAlphaComponent(0.4)
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
     }
 }
 

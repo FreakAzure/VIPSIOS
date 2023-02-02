@@ -62,6 +62,18 @@
 		BBA5610F2988BBED00C917CD /* CreatePostModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5610A2988BBED00C917CD /* CreatePostModuleRouter.swift */; };
 		BBA561102988BBED00C917CD /* CreatePostModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5610B2988BBED00C917CD /* CreatePostModuleViewController.swift */; };
 		BBA561112988BBED00C917CD /* CreatePostModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5610C2988BBED00C917CD /* CreatePostModuleInteractor.swift */; };
+		BBDA2434298C640B00130870 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BBDA2427298C640B00130870 /* LICENSE */; };
+		BBDA2435298C640B00130870 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BBDA2428298C640B00130870 /* README.md */; };
+		BBDA2436298C640B00130870 /* ToastConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA242B298C640B00130870 /* ToastConfiguration.swift */; };
+		BBDA2437298C640B00130870 /* ToastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA242C298C640B00130870 /* ToastDelegate.swift */; };
+		BBDA2438298C640B00130870 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA242E298C640B00130870 /* ToastView.swift */; };
+		BBDA2439298C640B00130870 /* AppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA2430298C640B00130870 /* AppleToastView.swift */; };
+		BBDA243A298C640B00130870 /* TextAppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA2431298C640B00130870 /* TextAppleToastView.swift */; };
+		BBDA243B298C640B00130870 /* IconAppleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA2432298C640B00130870 /* IconAppleToastView.swift */; };
+		BBDA243C298C640B00130870 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDA2433298C640B00130870 /* Toast.swift */; };
+		BBDA243E298C6F8500130870 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBDA243D298C6F8500130870 /* GoogleService-Info.plist */; };
+		BBDA243F298C6F8500130870 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBDA243D298C6F8500130870 /* GoogleService-Info.plist */; };
+		BBDA2440298C6F8500130870 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBDA243D298C6F8500130870 /* GoogleService-Info.plist */; };
 		E272FC06DB954FBD09AAC0B5 /* Pods_Vipspad_VipspadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA659799BE285A6783E6AFB /* Pods_Vipspad_VipspadUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +126,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9E0FD012ADC3C7179C684035672383E5;
 			remoteInfo = KeychainSwift;
+		};
+		BBDA2424298C63FC00130870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CB6C7D4B51E232E5A89E82040FD01E77;
+			remoteInfo = ToastViewSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -276,6 +295,16 @@
 		BBA5610A2988BBED00C917CD /* CreatePostModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostModuleRouter.swift; sourceTree = "<group>"; };
 		BBA5610B2988BBED00C917CD /* CreatePostModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostModuleViewController.swift; sourceTree = "<group>"; };
 		BBA5610C2988BBED00C917CD /* CreatePostModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostModuleInteractor.swift; sourceTree = "<group>"; };
+		BBDA2427298C640B00130870 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BBDA2428298C640B00130870 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBDA242B298C640B00130870 /* ToastConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastConfiguration.swift; sourceTree = "<group>"; };
+		BBDA242C298C640B00130870 /* ToastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastDelegate.swift; sourceTree = "<group>"; };
+		BBDA242E298C640B00130870 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		BBDA2430298C640B00130870 /* AppleToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleToastView.swift; sourceTree = "<group>"; };
+		BBDA2431298C640B00130870 /* TextAppleToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAppleToastView.swift; sourceTree = "<group>"; };
+		BBDA2432298C640B00130870 /* IconAppleToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconAppleToastView.swift; sourceTree = "<group>"; };
+		BBDA2433298C640B00130870 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		BBDA243D298C6F8500130870 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BD5C5189B422303B8DBF625D /* Pods_VipspadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VipspadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3094A4691C118C00376B4D5 /* Pods-Vipspad-VipspadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipspad-VipspadUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vipspad-VipspadUITests/Pods-Vipspad-VipspadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E475B5866A76FA1E5C1FD38D /* Pods-VipspadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VipspadTests.release.xcconfig"; path = "Target Support Files/Pods-VipspadTests/Pods-VipspadTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -312,6 +341,7 @@
 		05D89F26C1E7EFF39812168F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				BBDA2426298C640B00130870 /* ToastViewSwift */,
 				BB7EB386296B525000C4DE50 /* Alamofire */,
 				BB7EB385296B525000C4DE50 /* Headers */,
 				BB7EB346296B525000C4DE50 /* Local Podspecs */,
@@ -341,6 +371,7 @@
 		BB1D61E5295B550E00D093A4 = {
 			isa = PBXGroup;
 			children = (
+				BBDA243D298C6F8500130870 /* GoogleService-Info.plist */,
 				BB990B7A296B4E5C003C8A42 /* Podfile */,
 				BB1D61F0295B550E00D093A4 /* Vipspad */,
 				BB1D6207295B551100D093A4 /* VipspadTests */,
@@ -525,6 +556,7 @@
 				BB7EB352296B525000C4DE50 /* Pods_Vipspad.framework */,
 				BB7EB354296B525000C4DE50 /* Pods_Vipspad_VipspadUITests.framework */,
 				BB7EB356296B525000C4DE50 /* Pods_VipspadTests.framework */,
+				BBDA2425298C63FC00130870 /* ToastViewSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -746,6 +778,54 @@
 			path = CreatePostModule;
 			sourceTree = "<group>";
 		};
+		BBDA2426298C640B00130870 /* ToastViewSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA2427298C640B00130870 /* LICENSE */,
+				BBDA2428298C640B00130870 /* README.md */,
+				BBDA2429298C640B00130870 /* Sources */,
+			);
+			path = ToastViewSwift;
+			sourceTree = "<group>";
+		};
+		BBDA2429298C640B00130870 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA242A298C640B00130870 /* Toast */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BBDA242A298C640B00130870 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA242B298C640B00130870 /* ToastConfiguration.swift */,
+				BBDA242C298C640B00130870 /* ToastDelegate.swift */,
+				BBDA242D298C640B00130870 /* ToastViews */,
+				BBDA2433298C640B00130870 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		BBDA242D298C640B00130870 /* ToastViews */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA242E298C640B00130870 /* ToastView.swift */,
+				BBDA242F298C640B00130870 /* AppleToastView */,
+			);
+			path = ToastViews;
+			sourceTree = "<group>";
+		};
+		BBDA242F298C640B00130870 /* AppleToastView */ = {
+			isa = PBXGroup;
+			children = (
+				BBDA2430298C640B00130870 /* AppleToastView.swift */,
+				BBDA2431298C640B00130870 /* TextAppleToastView.swift */,
+				BBDA2432298C640B00130870 /* IconAppleToastView.swift */,
+			);
+			path = AppleToastView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -892,6 +972,13 @@
 			remoteRef = BBA560CF29817D7F00C917CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		BBDA2425298C63FC00130870 /* ToastViewSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ToastViewSwift.framework;
+			remoteRef = BBDA2424298C63FC00130870 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -901,7 +988,10 @@
 			files = (
 				BBA561072988B95000C917CD /* LaunchScreen.storyboard in Resources */,
 				BB1D61FB295B551000D093A4 /* Assets.xcassets in Resources */,
+				BBDA2435298C640B00130870 /* README.md in Resources */,
+				BBDA2434298C640B00130870 /* LICENSE in Resources */,
 				BB990B7B296B4E5C003C8A42 /* Podfile in Resources */,
+				BBDA243E298C6F8500130870 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -909,6 +999,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDA243F298C6F8500130870 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +1007,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDA2440298C6F8500130870 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1127,7 @@
 				BBA560D9298182DE00C917CD /* HomeModuleContract.swift in Sources */,
 				BB1D6245295B5B3A00D093A4 /* LoginInteractor.swift in Sources */,
 				BBA560F92984B3DA00C917CD /* PostFeedModuleRouter.swift in Sources */,
+				BBDA2436298C640B00130870 /* ToastConfiguration.swift in Sources */,
 				BBA5610E2988BBED00C917CD /* CreatePostModulePresenter.swift in Sources */,
 				BBA560D22981806F00C917CD /* RegexService.swift in Sources */,
 				BBA5610D2988BBED00C917CD /* CreatePostModuleContract.swift in Sources */,
@@ -1042,6 +1135,8 @@
 				BB7EB3CF296DA53B00C4DE50 /* VipsTheme.swift in Sources */,
 				BBA560E42981FE7500C917CD /* UIImageView.swift in Sources */,
 				BBA560EE2984180C00C917CD /* BaseProp.swift in Sources */,
+				BBDA2438298C640B00130870 /* ToastView.swift in Sources */,
+				BBDA2437298C640B00130870 /* ToastDelegate.swift in Sources */,
 				BBA560DF2981F2D500C917CD /* UINavigationBar.swift in Sources */,
 				BB7EB3B0296B6ECE00C4DE50 /* VipsAPIContract.swift in Sources */,
 				BBA560F72984B3DA00C917CD /* PostFeedModuleContract.swift in Sources */,
@@ -1050,8 +1145,10 @@
 				BB7EB3B4296B717A00C4DE50 /* Post.swift in Sources */,
 				BB1D6225295B55DF00D093A4 /* BaseViperContract.swift in Sources */,
 				BB1D6242295B5B3A00D093A4 /* LoginPresenter.swift in Sources */,
+				BBDA243A298C640B00130870 /* TextAppleToastView.swift in Sources */,
 				BB7EB3CD296DA13000C4DE50 /* UIImage.swift in Sources */,
 				BBA560EC2984177C00C917CD /* CategoryTableViewCell.swift in Sources */,
+				BBDA2439298C640B00130870 /* AppleToastView.swift in Sources */,
 				BBA560C229784F4600C917CD /* NavigationService.swift in Sources */,
 				BB1D6244295B5B3A00D093A4 /* LoginViewController.swift in Sources */,
 				BBA560FF29889C2300C917CD /* ImageViewCollectionViewCell.swift in Sources */,
@@ -1065,7 +1162,9 @@
 				BB7EB3B6296B719000C4DE50 /* Category.swift in Sources */,
 				BB1D6241295B5B3A00D093A4 /* LoginContract.swift in Sources */,
 				BBA561112988BBED00C917CD /* CreatePostModuleInteractor.swift in Sources */,
+				BBDA243B298C640B00130870 /* IconAppleToastView.swift in Sources */,
 				BBA5610F2988BBED00C917CD /* CreatePostModuleRouter.swift in Sources */,
+				BBDA243C298C640B00130870 /* Toast.swift in Sources */,
 				BBA560FD2984BADB00C917CD /* PostTableViewCell.swift in Sources */,
 				BB7EB3D8296DA7B600C4DE50 /* WebViewModuleRouter.swift in Sources */,
 				BB7EB3D6296DA7B600C4DE50 /* WebViewModuleContract.swift in Sources */,
