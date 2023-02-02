@@ -10,6 +10,11 @@ import Foundation
 
 class HomeModulePresenter: ViewToPresenterHomeModuleProtocol {
     
+    func viewDidLoad() {
+        
+    }
+    
+    
     var categories = Categories()
     
     required init(
@@ -29,13 +34,17 @@ class HomeModulePresenter: ViewToPresenterHomeModuleProtocol {
     var router: HomeModuleRouter
     
     
-    func viewDidLoad() {
+    func viewWillAppear() {
         interactor.retrieveUserData()
         interactor.retrieveCategories()
     }
     
     func navigateToCreatePost() {
         self.router.navigateToCreatePost()
+    }
+    
+    func logout() {
+        self.interactor.logOut()
     }
 }
 
@@ -53,5 +62,9 @@ extension HomeModulePresenter: InteractorToPresenterHomeModuleProtocol {
     
     func navigateToPostFeed(_ category: Category) {
         router.navigateToPosts(category)
+    }
+    
+    func setLoginAsRoot() {
+        router.setLoginAsRoot()
     }
 }

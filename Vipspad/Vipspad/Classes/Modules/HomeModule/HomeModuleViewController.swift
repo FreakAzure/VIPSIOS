@@ -46,12 +46,17 @@ class HomeModuleViewController: UIViewController {
         
     }
     
-    
+    @objc private func logoutClicked() {
+        self.presenter?.logout()
+    }
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         self.setupUI()
         super.viewDidLoad()
-        self.presenter?.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.presenter?.viewWillAppear()
     }
 
     // MARK: - Properties
@@ -65,12 +70,14 @@ extension HomeModuleViewController: PresenterToViewHomeModuleProtocol{
         let leftTitle = UILabel()
         let imageView = UIImageView(image: UIImage(named: "vips_logo"))
         let userImageView = UIImageView()
+        let logoutGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(logoutClicked))
         guard let imageURL = URL(string: userImage) else {return}
             
         userImageView.load(url: imageURL)
         userImageView.contentMode = .scaleAspectFit
         userImageView.layer.cornerRadius = imageView.frame.size.width / 2
         userImageView.clipsToBounds = true
+        userImageView.addGestureRecognizer(logoutGestureRecognizer)
           
         NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 34).isActive = true
         NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: imageView, attribute: .height, multiplier: 1, constant: 0).isActive = true

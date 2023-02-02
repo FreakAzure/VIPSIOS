@@ -41,7 +41,7 @@ class CreatePostModuleInteractor: PresenterToInteractorCreatePostModuleProtocol 
         parameters["risk_index"] = riskIndex
         parameters["network_id"] = networkId
         parameters["discord_url"] = discordUrl
-        parameters["external_url"] = externalUrl
+        parameters["market_url"] = externalUrl
         
         AlamofireService.shared.uploadPost(imagesArray: images, parameters: parameters, callback: .init(success: { _ in
             self.presenter?.postUploaded()

@@ -29,4 +29,9 @@ class HomeModuleInteractor: PresenterToInteractorHomeModuleProtocol {
             print(error)
         }))
     }
+    
+    func logOut() {
+        KeyChainService.shared.delteApiToken()
+        self.presenter?.setLoginAsRoot()
+    }
 }
