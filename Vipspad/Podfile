@@ -8,8 +8,8 @@ target 'Vipspad' do
   pod 'Alamofire'
   pod 'KeychainSwift'
   pod "ToastViewSwift"
-  pod 'FirebaseMessaging', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
-  pod 'FirebaseCore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :branch => 'master'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseCore'
   target 'VipspadTests' do
     inherit! :search_paths
     # Pods for testing

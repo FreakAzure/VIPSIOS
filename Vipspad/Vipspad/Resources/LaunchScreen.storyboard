@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -20,13 +20,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRc-4Z-3HW">
-                                <rect key="frame" x="162.5" y="771" width="89" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="169.5" y="775" width="75.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatalab_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jow-b8-fp0">
-                                <rect key="frame" x="87" y="732" width="240" height="130"/>
+                                <rect key="frame" x="87" y="722" width="240" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="kv2-VV-938"/>
                                     <constraint firstAttribute="height" constant="130" id="qr8-Mc-z8s"/>
@@ -39,7 +39,7 @@
                             <constraint firstItem="jow-b8-fp0" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7PM-OH-AlW"/>
                             <constraint firstAttribute="bottom" secondItem="zZS-D8-U2p" secondAttribute="bottom" id="8Gb-xB-oOQ"/>
                             <constraint firstItem="XRc-4Z-3HW" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ACp-b1-ThB"/>
-                            <constraint firstItem="jow-b8-fp0" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="G3Y-M2-Ra7"/>
+                            <constraint firstItem="jow-b8-fp0" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-10" id="G3Y-M2-Ra7"/>
                             <constraint firstItem="zZS-D8-U2p" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="HpN-9A-ISf"/>
                             <constraint firstItem="zZS-D8-U2p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MRJ-Ev-NPx"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XRc-4Z-3HW" secondAttribute="bottom" constant="70" id="gLB-6D-Ykh"/>

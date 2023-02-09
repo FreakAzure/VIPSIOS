@@ -92,6 +92,62 @@
 			remoteGlobalIDString = BB1D61ED295B550E00D093A4;
 			remoteInfo = Vipspad;
 		};
+		BB521446298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2B63D462DB7F827C4B11FD51E4F8E2D;
+			remoteInfo = FirebaseCore;
+		};
+		BB521448298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 148D0F9E8C7373FEAF40D800FC5F1BAA;
+			remoteInfo = FirebaseCoreInternal;
+		};
+		BB52144A298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13C8C8B254851998F9289F71229B28A2;
+			remoteInfo = FirebaseInstallations;
+		};
+		BB52144C298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5B654B4B042BA7DC93766943A643E42B;
+			remoteInfo = FirebaseMessaging;
+		};
+		BB52144E298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 856B5CD56F194FAD26EA91620B66D614;
+			remoteInfo = GoogleDataTransport;
+		};
+		BB521450298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B43874C6CBB50E7134FBEC24BABFE14F;
+			remoteInfo = GoogleUtilities;
+		};
+		BB521452298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FC5C9CF96D60C50FCD47D339C91951;
+			remoteInfo = nanopb;
+		};
+		BB521454298C7FDF003C0C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3347A1AB6546F0A3977529B8F199DC41;
+			remoteInfo = PromisesObjC;
+		};
 		BB7EB34F296B525000C4DE50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB7EB348296B525000C4DE50 /* Pods.xcodeproj */;
@@ -551,12 +607,20 @@
 		BB7EB349296B525000C4DE50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB7EB350296B525000C4DE50 /* Alamofire.framework */,
-				BBA560D029817D7F00C917CD /* KeychainSwift.framework */,
-				BB7EB352296B525000C4DE50 /* Pods_Vipspad.framework */,
-				BB7EB354296B525000C4DE50 /* Pods_Vipspad_VipspadUITests.framework */,
-				BB7EB356296B525000C4DE50 /* Pods_VipspadTests.framework */,
-				BBDA2425298C63FC00130870 /* ToastViewSwift.framework */,
+				BB7EB350296B525000C4DE50 /* Alamofire */,
+				BB521447298C7FDF003C0C6A /* FirebaseCore */,
+				BB521449298C7FDF003C0C6A /* FirebaseCoreInternal */,
+				BB52144B298C7FDF003C0C6A /* FirebaseInstallations */,
+				BB52144D298C7FDF003C0C6A /* FirebaseMessaging */,
+				BB52144F298C7FDF003C0C6A /* GoogleDataTransport */,
+				BB521451298C7FDF003C0C6A /* GoogleUtilities */,
+				BBA560D029817D7F00C917CD /* KeychainSwift */,
+				BB521453298C7FDF003C0C6A /* nanopb */,
+				BB7EB352296B525000C4DE50 /* Pods-Vipspad */,
+				BB7EB354296B525000C4DE50 /* Pods-Vipspad-VipspadUITests */,
+				BB7EB356296B525000C4DE50 /* Pods-VipspadTests */,
+				BB521455298C7FDF003C0C6A /* PromisesObjC */,
+				BBDA2425298C63FC00130870 /* ToastViewSwift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -937,44 +1001,114 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		BB7EB350296B525000C4DE50 /* Alamofire.framework */ = {
+		BB521447298C7FDF003C0C6A /* FirebaseCore */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = FirebaseCore;
+			path = FirebaseCore.framework;
+			remoteRef = BB521446298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB521449298C7FDF003C0C6A /* FirebaseCoreInternal */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = FirebaseCoreInternal;
+			path = FirebaseCoreInternal.framework;
+			remoteRef = BB521448298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB52144B298C7FDF003C0C6A /* FirebaseInstallations */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = FirebaseInstallations;
+			path = FirebaseInstallations.framework;
+			remoteRef = BB52144A298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB52144D298C7FDF003C0C6A /* FirebaseMessaging */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = FirebaseMessaging;
+			path = FirebaseMessaging.framework;
+			remoteRef = BB52144C298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB52144F298C7FDF003C0C6A /* GoogleDataTransport */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = GoogleDataTransport;
+			path = GoogleDataTransport.framework;
+			remoteRef = BB52144E298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB521451298C7FDF003C0C6A /* GoogleUtilities */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = GoogleUtilities;
+			path = GoogleUtilities.framework;
+			remoteRef = BB521450298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB521453298C7FDF003C0C6A /* nanopb */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = nanopb;
+			path = nanopb.framework;
+			remoteRef = BB521452298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB521455298C7FDF003C0C6A /* PromisesObjC */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = PromisesObjC;
+			path = FBLPromises.framework;
+			remoteRef = BB521454298C7FDF003C0C6A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB7EB350296B525000C4DE50 /* Alamofire */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = Alamofire;
 			path = Alamofire.framework;
 			remoteRef = BB7EB34F296B525000C4DE50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BB7EB352296B525000C4DE50 /* Pods_Vipspad.framework */ = {
+		BB7EB352296B525000C4DE50 /* Pods-Vipspad */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = "Pods-Vipspad";
 			path = Pods_Vipspad.framework;
 			remoteRef = BB7EB351296B525000C4DE50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BB7EB354296B525000C4DE50 /* Pods_Vipspad_VipspadUITests.framework */ = {
+		BB7EB354296B525000C4DE50 /* Pods-Vipspad-VipspadUITests */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = "Pods-Vipspad-VipspadUITests";
 			path = Pods_Vipspad_VipspadUITests.framework;
 			remoteRef = BB7EB353296B525000C4DE50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BB7EB356296B525000C4DE50 /* Pods_VipspadTests.framework */ = {
+		BB7EB356296B525000C4DE50 /* Pods-VipspadTests */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = "Pods-VipspadTests";
 			path = Pods_VipspadTests.framework;
 			remoteRef = BB7EB355296B525000C4DE50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BBA560D029817D7F00C917CD /* KeychainSwift.framework */ = {
+		BBA560D029817D7F00C917CD /* KeychainSwift */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = KeychainSwift;
 			path = KeychainSwift.framework;
 			remoteRef = BBA560CF29817D7F00C917CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BBDA2425298C63FC00130870 /* ToastViewSwift.framework */ = {
+		BBDA2425298C63FC00130870 /* ToastViewSwift */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = ToastViewSwift;
 			path = ToastViewSwift.framework;
 			remoteRef = BBDA2424298C63FC00130870 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -1334,14 +1468,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = LP73L8HZC4;
+				DEVELOPMENT_TEAM = QA3RDF5XN4;
 				INFOPLIST_FILE = Vipspad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.Vipspad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.v1psnft.VipsNft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1356,14 +1490,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = LP73L8HZC4;
+				DEVELOPMENT_TEAM = QA3RDF5XN4;
 				INFOPLIST_FILE = Vipspad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.whatalab.vipspad.Vipspad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.v1psnft.VipsNft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
